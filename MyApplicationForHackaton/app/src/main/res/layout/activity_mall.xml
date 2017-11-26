@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.example.ada.myapplicationforhackaton.MallActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MALL"
+        android:id="@+id/mallTV"
+        android:textSize="30dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchmagazineet"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mallTV"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsearchmagazine"
+        android:text="Cauta"
+        android:background="#5ab9ea"
+        app:layout_constraintRight_toRightOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:text="Newsfeed"
+        android:id="@+id/nf"
+        app:layout_constraintTop_toBottomOf="@+id/searchmagazineet"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listOFNEWS"
+        app:layout_constraintTop_toBottomOf="@+id/nf"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="#c1c8e4"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To Do"
+        android:id="@+id/tdbtn"
+        android:background="#5ab9ea"
+        />
+</android.support.constraint.ConstraintLayout>
