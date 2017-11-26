@@ -166,10 +166,10 @@ public class UserSeesMagazinActivity extends AppCompatActivity {
                             @Override
                             public void run() {
                                 for(Comment p:mylist)
+                                    if(p.getMagazin().toString().equals(magazin.getNume()))
                                     adapter.add(p.toString());
                             }
                         });
-
 
                     } catch (final Exception e) {
                         createAndShowDialogFromTask(e, "Error!");

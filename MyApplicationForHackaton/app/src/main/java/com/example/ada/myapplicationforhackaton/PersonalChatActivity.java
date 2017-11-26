@@ -158,11 +158,12 @@ public class PersonalChatActivity extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                            for (Message p : mylist) {
-                                if(p.getMagazin().equals(maga))
+                            for (Message p : mylist)
+                            {
+                                if(p.getText().contains(maga))
                                     adapter.add(p.getText());
                                 else
-                                if(p.getUser().equals(user))
+                                if(p.getUser().toString().equals(user))
                                     adapter.add(p.getText());
                             }
                         }
@@ -232,4 +233,6 @@ public class PersonalChatActivity extends AppCompatActivity {
             return task.execute();
         }
     }
+
+
 }
